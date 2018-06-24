@@ -1,0 +1,31 @@
+Tarea 2
+-------
+
+1) Navegar al sitio repo de github: https://github.com/bafch/cpp
+
+2) Luego escoja el ejercicio: 6-programa-calculo-factura
+
+3) Y seleccione el programa factura.cpp para ver el código
+
+4) Este programa recibe dos argumentos: subtotal y descuento
+
+utilizando la consola cmd se ejecuta asi: factura 1000 10
+
+5) Modifique el programa para utilizar la funcion cin
+
+* El programa ya no debe utilizar argumentos
+
+El programa debe preguntar por el subtotal, descuento y si la factura es exenta utilizando cout y cin, de la siguiente manera:
+
+cout << "Ingrese el subtotal: ";
+cin >> subtotal;
+cout << "Ingrese el descuento: ";
+cin >> descuento;
+cout << "Es factura exenta? s/n";
+cin >> esExento;
+
+6) Utilice la sentencia switch o condicion IF para determinar si la factura esta exenta o no.
+
+7) En caso de que la factura este exenta el calculoImpuesto = 0
+
+8) El programa debe mostrar al final en consola el total a pagar
