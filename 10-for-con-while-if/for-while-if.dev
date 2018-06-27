@@ -1,6 +1,6 @@
 [Project]
-FileName=for-anidado.dev
-Name=for-anidado
+FileName=for-while-if.dev
+Name=for-while-if
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=for-anidado.cpp
+FileName=for-while-if.cpp
 CompileCpp=1
 Folder=
 Compile=1
