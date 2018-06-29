@@ -47,7 +47,7 @@ int main() {
 			
 			// incremente el vakor de 3000000 para retrasar el proceso
 			i = 0;
-			while (i < 3000000) {
+			while (i < 300000) {
 				GetChar(1, 1, 1);
 				 ++i;
 			}
