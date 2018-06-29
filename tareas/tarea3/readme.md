@@ -7,7 +7,7 @@
 
   	a) El programa permite ingresar a la matrix al agente Smith. Modifique el código de tal manera que Neo pueda ingresar tambien.
 
-	b) Despues de 1001 intentos, Neo debe poder ser capaz de hackear la matrix y romper el ciclo infinito su código.
+	b) Despues de 1001 intentos, Neo debe poder ser capaz de hackear la matrix y romper el ciclo infinito de su código.
 
 	c) Mostrar un mensaje diciendo: ```El Sistema Fallo```
 
