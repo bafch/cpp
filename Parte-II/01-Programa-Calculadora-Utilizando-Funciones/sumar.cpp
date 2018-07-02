@@ -10,6 +10,12 @@ int sumar(int a, int b = 20) {
    return result;
 }
 
+void coutEndls(int ciclos) {
+	for(int indice = 1; indice <= ciclos; indice ++) {
+		cout << endl;	
+	}
+}
+
 int main () {
 	int a = 0;
 	int b = 0;
@@ -19,9 +25,7 @@ int main () {
 	cout << "Ingrese el valor de b: ";
 	cin >> b;	
 	
-	cout << endl;
-	cout << endl;
-	cout << endl;
+	coutEndls(3);
 		
 	cout << "Resultado suma: " << sumar(a, b) << endl;
 	cout << "Resultado resta: " << restar(a, b) << endl;
