@@ -3,7 +3,7 @@ Tarea 2
 
 1) Navegar al sitio repo de github: https://github.com/bafch/cpp
 
-2) Luego escoja el ejercicio: 6-programa-calculo-factura
+2) Luego escoja el ejercicio: Parte-I/08-programa-calculo-factura
 
 3) Y seleccione el programa factura.cpp para ver el código
 
