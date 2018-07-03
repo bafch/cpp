@@ -1,6 +1,6 @@
 [Project]
-FileName=Programa-Calculadora-Utilizando-Funciones.dev
-Name=Programa-Calculadora-Utilizando-Funciones
+FileName=Funciones-y-Modulos.dev
+Name=Funciones-y-Modulos
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=1
+UnitCount=2
 
 [VersionInfo]
 Major=1
@@ -51,7 +51,17 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=sumar.cpp
+FileName=funciones-y-modulos.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=calculadora.cpp
 CompileCpp=1
 Folder=
 Compile=1
