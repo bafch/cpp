@@ -12,7 +12,7 @@ int sumar(int a, int b = 20) {
 
 void coutEndls(int ciclos) {
 	for(int indice = 1; indice <= ciclos; indice ++) {
-		cout << endl;	
+		cout << "*";	
 	}
 }
 
@@ -25,7 +25,10 @@ int main () {
 	cout << "Ingrese el valor de b: ";
 	cin >> b;	
 	
-	coutEndls(3);
+	for(int indice = 1; indice <= 10; indice ++) {
+		coutEndls(indice);
+		cout << endl;
+}	
 		
 	cout << "Resultado suma: " << sumar(a, b) << endl;
 	cout << "Resultado resta: " << restar(a, b) << endl;
