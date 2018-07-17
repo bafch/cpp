@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000000000000
-UnitCount=15
+UnitCount=13
 
 [VersionInfo]
 Major=1
@@ -172,16 +172,6 @@ BuildCmd=
 
 [Unit13]
 FileName=menu.h
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit14]
-FileName=consola.cpp
 CompileCpp=1
 Folder=
 Compile=1

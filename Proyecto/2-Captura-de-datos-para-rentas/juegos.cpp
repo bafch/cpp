@@ -14,7 +14,7 @@ string arregloJuegos[10][2] = {
 	{ "J007", "FIFA 2018"},
 	{ "J008", "Destiny 2"},
 	{ "J009", "Horizon Hero"},
-	{ "J0010", "Rocket League"}
+	{ "J010", "Rocket League"}
 };
 
 
@@ -40,6 +40,9 @@ void juegos() {
 
 bool buscarJuego(string &codigo, string &descripcionJuego) {
 	while(true) {
+		mensajeEnConsola("BUSCAR JUEGO");
+		mensajeEnConsola("------------");
+		saltosDeLinea(2);			
 		mensajeConValorEnConsola("Codigo del Juego: ", codigo);
 		
 		for(int indice = 0; indice < 5; indice++) {		

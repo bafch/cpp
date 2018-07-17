@@ -35,6 +35,9 @@ void clientes() {
 
 bool buscarCliente(string &codigo, string &nombreCliente) {
 	while(true) {
+		mensajeEnConsola("BUSCAR CLIENTE");
+		mensajeEnConsola("--------------");
+		saltosDeLinea(2);		
 		mensajeConValorEnConsola("Codigo del Cliente: ", codigo);
 		
 		for(int indice = 0; indice < 5; indice++) {		

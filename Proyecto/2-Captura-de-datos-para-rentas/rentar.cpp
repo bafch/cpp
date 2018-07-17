@@ -15,15 +15,16 @@ void rentar() {
 	
 	bool salir = false;
 	
-	while(salir == false) {		    	
+	while(salir == false) {		 
+		system("cls");   			
 		// CLIENTE
 		string codigoCliente;
 		string nombreCliente;
 		if (buscarCliente(codigoCliente, nombreCliente) == false) {
 			return;
 		}
-		saltosDeLinea(1);				
 		
+		system("cls");   	
 		// JUEGO
 		string codigoJuego;
 		string descripcionJuego;
