@@ -2,6 +2,7 @@
 #include "rentar.h"
 #include "mensajes.h"
 #include "clientes.h"
+#include "juegos.h"
 
 using namespace std;
 
@@ -17,9 +18,29 @@ void rentar() {
 	while(salir == false) {		    	
 		// CLIENTE
 		string codigoCliente;
-		if (buscarCliente(codigoCliente) == false) {
+		string nombreCliente;
+		if (buscarCliente(codigoCliente, nombreCliente) == false) {
 			return;
 		}
+		saltosDeLinea(1);				
+		
+		// JUEGO
+		string codigoJuego;
+		string descripcionJuego;
+		if (buscarJuego(codigoJuego, descripcionJuego) == false) {
+			return;
+		}	
+		
+		system("cls");
+		mensajeEnConsola("JUEGO RENTADO");
+		mensajeEnConsola("-------------");
+		mensajeEnConsola("Codigo Cliente " + codigoCliente);
+		mensajeEnConsola("-->" + nombreCliente);
+		saltosDeLinea(1);				
+		mensajeEnConsola("Codigo Juego " + codigoJuego);
+		mensajeEnConsola("-->" + descripcionJuego);
+		saltosDeLinea(1);				
+		mensajeEnConsola("Juego rentado por 3 dias");
 		
 		saltosDeLinea(3);				
 		string opcion;

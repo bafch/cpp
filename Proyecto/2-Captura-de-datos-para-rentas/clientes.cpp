@@ -33,13 +33,14 @@ void clientes() {
 	}
 }
 
-bool buscarCliente(string &codigo) {
+bool buscarCliente(string &codigo, string &nombreCliente) {
 	while(true) {
 		mensajeConValorEnConsola("Codigo del Cliente: ", codigo);
 		
 		for(int indice = 0; indice < 5; indice++) {		
 			if (arregloClientes[indice][0] == codigo) {
-				mensajeEnConsola("--> " + arregloClientes[indice][1]);
+				nombreCliente = arregloClientes[indice][1];
+				mensajeEnConsola("--> " + nombreCliente);
 				return true;
 			}
 		}		
@@ -49,7 +50,7 @@ bool buscarCliente(string &codigo) {
 			system("cls");
 			
 			string opcion = "";
-			mensajeConValorEnConsola("Codigo de cliente no encontrado, desea continuar s/n? ", opcion);
+			mensajeConValorEnConsola("Codigo de cliente no encontrado, desea continuar buscando s/n? ", opcion);
 			
 			if (opcion == "s" || opcion == "S") {
 				continuar = true;
