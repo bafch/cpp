@@ -78,7 +78,7 @@ void rentar() {
 		
 		saltosDeLinea(3);			
 		
-		arregloRentas[ultimaLinea] = codigoCliente + " | " + nombreCliente + " | " + codigoJuego + " | " + descripcionJuego + " | " + textoRentaDevolucion;
+		arregloRentas[ultimaLinea] = codigoCliente + " - " + nombreCliente + " | " + codigoJuego + " - " + descripcionJuego + " | " + textoRentaDevolucion;
 		ultimaLinea++;
 			
 		string opcion;
