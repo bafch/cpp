@@ -12,14 +12,13 @@ using namespace std;
 #define DERECHA 77
 #define ESC 27
 
-char tecla;
+int Puntos;
 int cuerpo[200][2];
 int n=1;
 int tam = 3;
 int x=10, y=12;
 int dir=3;
 int xc=30, yc=20;
-int Puntos=0;
 int xxc= 40, yyc=18;
 int d;
 int dif;
@@ -89,7 +88,7 @@ void borrarcuerpo(){
 		guardarposicion();
 	}
 
-void Teclear(){
+void Teclear(char &tecla){
 	if (kbhit()){
 		tecla=getch();
 		switch(tecla){
@@ -155,12 +154,13 @@ void puntosx(){
 	}
 } 
 
-void proceso(){
+void proceso(char &tecla, int &puntos){ 
+	Puntos = puntos;
 	borrarcuerpo();
 	comida();
 	puntosx();
-	Teclear();
-	Teclear();
+	Teclear(tecla);
+	Teclear(tecla);
 	if (dir==1){y--;}
 	if (dir==2){y++;}
 	if (dir==3){x++;}
@@ -168,20 +168,29 @@ void proceso(){
 	Sleep(dif);
 }
 
+
 int main(){
-dificultad();	
-gotoxy(50,2);cout<<Puntos;
-pintar();
-gotoxy(xc,yc);cout<<(char)4;	
-while(tecla != ESC && gameover() ){
-    proceso();
-}
-if ( !gameover()){
-	MessageBox(NULL,"Has perdido","Perdedor", MB_OK);
-	system("cls");
-}
+	char tecla;
+	int puntos=0;
+	int xPos=30, yPos=20;
+	
+	dificultad();	
+	gotoxy(50,2);
+	cout << puntos;
+	pintar();
+	gotoxy(xPos, yPos);cout<<(char)4;	
+	
+	while(tecla != ESC && gameover() ){
+	    proceso(tecla, puntos);
+	}
+	
+	if ( !gameover()){
+		MessageBox(NULL,"Has perdido","Perdedor", MB_OK);
+		system("cls");
+	}
+	
 	system("pause>NULL");
 	return 0;
-
 }
+
 
