@@ -1,0 +1,7 @@
+Tarea 4
+-------
+
+1) Ingrese a https://github.com/bafch/cpp/tree/master/tareas/tarea4
+2) Modifique el programa juego de dinosaurio para que cumpla con los siguientes requisitos:
+  a) Modular el programa moviendo todas las funciones a un nuevo archivo llamado dino.cpp
+  b) En el archivo juego.cpp solo debe quedar la funcion main
