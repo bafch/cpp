@@ -29,27 +29,22 @@ class Cliente {
 
 Cliente arregloObjClientes[3];
 
-void clientes() {
-	
+void inicializarDatosdeClientes() {
 	Cliente cliente1("C001", "Juan Perez", "99-88-77-66");
 	arregloObjClientes[0] = cliente1;
 	
 	Cliente cliente2("C002", "Maria Martinez", "99-88-77-66");
 	arregloObjClientes[1] = cliente2;
-	
-	for(int i =0; i < 3; i++) {
-		cout << arregloObjClientes[i].Nombre << endl;
-	}
-	
-	//system("pause");
-	
+}
+
+void clientes() {	
 	system("cls");
 
 	cout << "Listado de Clientes" << endl;
 	cout << "-------------------" << endl;
 		
-	for(int indice = 0; indice < 5; indice++) {
-		cout << arregloClientes[indice][0] << " - " << arregloClientes[indice][1] << endl;;
+	for(int indice = 0; indice < 2; indice++) {
+		cout << arregloObjClientes[indice].Codigo << " - " << arregloObjClientes[indice].Nombre << endl;;
 	}
 
 	cout << endl;
@@ -75,10 +70,11 @@ bool buscarCliente(string &codigo, string &nombreCliente) {
 		saltosDeLinea(2);		
 		mensajeConValorEnConsola("Codigo del Cliente: ", codigo);
 		
-		for(int indice = 0; indice < 5; indice++) {		
-			if (arregloClientes[indice][0] == codigo) {
-				nombreCliente = arregloClientes[indice][1];
+		for(int indice = 0; indice < 2; indice++) {	
+			if (arregloObjClientes[indice].Codigo == codigo) {
+				nombreCliente = arregloObjClientes[indice].Nombre;
 				mensajeEnConsola("--> " + nombreCliente);
+				system("PAUSE");
 				return true;
 			}
 		}		

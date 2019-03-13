@@ -42,10 +42,10 @@ CursorRow=5
 TopLine=1
 LeftChar=1
 [Editor_8]
-CursorCol=4
-CursorRow=44
-TopLine=30
-LeftChar=1
+CursorCol=33
+CursorRow=75
+TopLine=36
+LeftChar=10
 [Editor_9]
 CursorCol=44
 CursorRow=5
