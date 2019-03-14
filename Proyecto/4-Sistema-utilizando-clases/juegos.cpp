@@ -18,6 +18,29 @@ string arregloJuegos[10][2] = {
 };
 
 
+class Juego {
+	public:
+		string Codigo;
+		string Descripcion;
+		Juego() {
+			
+		}
+		Juego(string codigo, string descripcion) {
+			Codigo = codigo;
+			Descripcion - descripcion;
+		}
+};
+
+Juego arregloObjJuego[4];
+
+void inicializarDatosdeJuegos() {
+	Juego juego1("J001", "The Crew 2");
+	arregloObjJuego[0] = juego1;
+	
+	
+}
+
+
 void juegos() {
 	system("cls");
 	
