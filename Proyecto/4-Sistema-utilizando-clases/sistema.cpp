@@ -2,6 +2,7 @@
 #include "seguridad.h"
 #include "menu.h"
 #include "clientes.h"
+#include "juegos.h"
 
 using namespace std;
 
@@ -11,6 +12,8 @@ int main () {
 	}
 	
 	inicializarDatosdeClientes();
+	inicializarDatosdeJuegos();
+	
 	menu();
 		
 	return 0;

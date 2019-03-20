@@ -27,7 +27,7 @@ class Juego {
 		}
 		Juego(string codigo, string descripcion) {
 			Codigo = codigo;
-			Descripcion - descripcion;
+			Descripcion = descripcion;
 		}
 };
 
@@ -36,8 +36,15 @@ Juego arregloObjJuego[4];
 void inicializarDatosdeJuegos() {
 	Juego juego1("J001", "The Crew 2");
 	arregloObjJuego[0] = juego1;
+
+	Juego juego2("J002", "Jurassic World Evolution");
+	arregloObjJuego[1] = juego2;
 	
+	Juego juego3("J003", "God Of War");
+	arregloObjJuego[2] = juego3;
 	
+	Juego juego4("J004", "Monster Hunter");
+	arregloObjJuego[3] = juego4;				
 }
 
 
@@ -48,7 +55,7 @@ void juegos() {
 	cout << "-----------------------------" << endl;
 		
 	for(int indice = 0; indice < 10; indice++) {
-		cout << arregloJuegos[indice][0] << " - " << arregloJuegos[indice][1] << endl;;
+		cout << arregloObjJuego[indice].Codigo << " - " << arregloObjJuego[indice].Descripcion << endl;;
 	}
 	cout << endl;
 	cout << endl;
@@ -74,8 +81,8 @@ bool buscarJuego(string &codigo, string &descripcionJuego) {
 		mensajeConValorEnConsola("Codigo del Juego: ", codigo);
 		
 		for(int indice = 0; indice < 5; indice++) {		
-			if (arregloJuegos[indice][0] == codigo) {
-				descripcionJuego = arregloJuegos[indice][1];
+			if (arregloObjJuego[indice].Codigo == codigo) {
+				descripcionJuego = arregloObjJuego[indice].Descripcion;
 				mensajeEnConsola("--> " + descripcionJuego);
 				return true;
 			}
