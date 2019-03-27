@@ -6,6 +6,21 @@
 
 using namespace std;
 
+class Rentas {
+	public:
+		Cliente ClienteObj;
+		Juego JuegoObj;
+		string RentaDevolucion;
+		Rentas() {
+			
+		}
+		Rentas(Cliente cliente, Juego juego, string rentaDevolucion) {
+			ClienteObj = cliente;
+			JuegoObj = juego;
+			RentaDevolucion = rentaDevolucion;
+		}
+};
+
 string arregloRentas[100];
 int ultimaLinea = 0;
 

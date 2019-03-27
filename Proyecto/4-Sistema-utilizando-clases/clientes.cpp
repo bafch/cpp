@@ -12,21 +12,6 @@ string arregloClientes[5][3] = {
 	{ "C005", "Pablo Jimenez", "99-55-55-55" }
 };
 
-class Cliente {
-	public:
-		string Codigo;
-		string Nombre;
-		string Telefono;
-		Cliente() {
-			
-		}
-		Cliente(string codigo, string nombre, string telefono) {
-			Codigo = codigo;
-			Nombre = nombre;
-			Telefono = telefono;
-		}
-};
-
 Cliente arregloObjClientes[3];
 
 void inicializarDatosdeClientes() {

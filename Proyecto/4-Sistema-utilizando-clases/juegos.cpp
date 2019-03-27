@@ -17,20 +17,6 @@ string arregloJuegos[10][2] = {
 	{ "J010", "Rocket League"}
 };
 
-
-class Juego {
-	public:
-		string Codigo;
-		string Descripcion;
-		Juego() {
-			
-		}
-		Juego(string codigo, string descripcion) {
-			Codigo = codigo;
-			Descripcion = descripcion;
-		}
-};
-
 Juego arregloObjJuego[4];
 
 void inicializarDatosdeJuegos() {
