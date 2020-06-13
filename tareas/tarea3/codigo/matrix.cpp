@@ -13,7 +13,7 @@ char GetChar(int iGenerator, char cBase, int iRange) {
 int main() {
 	string constrasena;
 	
-	cout << "Eres un agente? ingresa tu contraseña ";
+	cout << "Eres un agente? ingresa tu contraseÃ±a ";
 	cin >> constrasena;
 	
 	if (constrasena == "smith") {
@@ -45,7 +45,7 @@ int main() {
 			caRow[Modulus(l, 80)] = '-';
 			caRow[Modulus(m, 80)] = ' ';
 			
-			// incremente el vakor de 3000000 para retrasar el proceso
+			// incremente el valor de 3000000 para retrasar el proceso
 			i = 0;
 			while (i < 300000) {
 				GetChar(1, 1, 1);
